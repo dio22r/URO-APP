@@ -1,0 +1,58 @@
+<ion-header [translucent]="true" class="uro-header">
+  <ion-toolbar class="">
+    <div class="title-warper">
+      <div class="logo">
+        <ion-img src="assets\icon\drawable-hdpi\Logo Light Blue.png"></ion-img>
+      </div>
+      <h3 class="text"><strong>My</strong> Project</h3>
+    </div>
+    <ion-searchbar></ion-searchbar>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <div class="text-center">
+    <ion-button
+      size="small"
+      [attr.fill]="showFinished ? 'solid' : 'outline'"
+      shape="round"
+      (click)="toggle_show_finished()"
+      >Tampilkan Terselesaikan</ion-button
+    >
+  </div>
+
+  <ion-item
+    *ngFor="let data of project; let i = index"
+    (click)="project_click(data.id)"
+    [ngClass]="{'disabled' : data.isFinished}"
+  >
+    <ion-avatar slot="start">
+      <div class="circle-index">{{ i + 1}}</div>
+    </ion-avatar>
+    <ion-label>
+      <ion-text>
+        <h2>{{data.nama}}</h2>
+      </ion-text>
+      <ion-text color="medium">
+        <p class="job">{{data.owner}}</p>
+      </ion-text>
+    </ion-label>
+
+    <div class="button-warper" *ngIf="activeid == data.id">
+      <ion-button
+        color="uro-primary"
+        size="small"
+        shape="round"
+        (click)="edit_project(data.id)"
+        >Edit</ion-button
+      ><br />
+      <ion-button
+        size="small"
+        color="light"
+        (click)="delete_project(data.id)"
+        shape="round"
+        >Delete</ion-button
+      >
+    </div>
+  </ion-item>
+</ion-content>

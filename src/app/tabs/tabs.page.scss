@@ -1,0 +1,67 @@
+ion-tab-bar {
+  border-radius: 16px 16px 0px 0px;
+  width: 100%;
+  margin: 0 auto;
+  background-color: #58f9da;
+}
+
+.tab-bottom ion-tab-button {
+  background-color: #58f9da;
+  color: #1f2a4d;
+}
+
+.tab-bottom ion-tab-button ion-thumbnail {
+  width: 32px;
+  height: 32px;
+  margin-top: 5px;
+  margin-bottom: 2px;
+}
+
+ion-tab-button {
+  .icon-tab1 {
+    background-image: url("/assets/icon/drawable-hdpi/Icon Collegas Light.png");
+    background-size: 32px 32px;
+  }
+  .icon-tab2 {
+    background-image: url("/assets/icon/drawable-hdpi/Icon Project Light.png");
+    background-size: 32px 32px;
+  }
+  .icon-tab3 {
+    background-image: url("/assets/icon/drawable-hdpi/Icon Task Light.png");
+    background-size: 32px 32px;
+  }
+  .icon-tab4 {
+    background-image: url("/assets/icon/drawable-hdpi/Icon Notif Light.png");
+    background-size: 32px 32px;
+  }
+  .icon-tab5 {
+    background-image: url("/assets/icon/drawable-hdpi/tab-profile.png");
+    background-size: 32px 32px;
+  }
+}
+
+ion-tab-button[aria-selected="true"] {
+  //führ eventuellen text
+  //span {
+  //color: #f00; //whatever colour you want to use for the text
+  //}
+  .icon-tab1 {
+    background-image: url(/assets/icon/drawable-hdpi/icon-collegas-active.png);
+  }
+
+  .icon-tab2 {
+    background-image: url(/assets/icon/drawable-hdpi/icon-project-active.png);
+  }
+
+  .icon-tab3 {
+    background-image: url(/assets/icon/drawable-hdpi/icon-task-active.png);
+  }
+
+  .icon-tab4 {
+    background-image: url(/assets/icon/drawable-hdpi/icon-notif-active.png);
+  }
+
+  .icon-tab5 {
+    background-image: url(/assets/icon/drawable-hdpi/tab-profile-active.png);
+  }
+}
