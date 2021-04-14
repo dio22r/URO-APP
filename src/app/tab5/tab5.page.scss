@@ -1,0 +1,72 @@
+.title-warper {
+  padding: 20px;
+}
+
+.title-warper .logo,
+.title-warper .text {
+  vertical-align: middle;
+}
+
+.title-warper .logo {
+  width: 35px;
+  display: inline-block;
+  margin: 0px 13px 0px 17px;
+}
+
+.title-warper .text {
+  color: #58f9da;
+  font-size: 24pt;
+  display: inline-block;
+  margin: 0px;
+  padding: 3px 12px;
+  border-left: 1px solid white;
+}
+
+.title-warper .text strong {
+  color: #30b299;
+}
+
+.profile-container {
+  margin: 0px 20px;
+}
+
+.profile-container ion-avatar {
+  display: inline-block;
+  width: 90%;
+  height: 90%;
+}
+
+.profile-container p {
+  margin: 0px;
+  padding: 0px;
+  color: #30b299;
+}
+
+.profile-container .uro-usr-det {
+  color: white;
+  font-size: 14pt;
+  font-weight: bold;
+  margin-bottom: 2px;
+}
+
+.profile-action ion-avatar {
+  display: inline-block;
+  width: 70%;
+  height: 70%;
+}
+
+.profile-action ion-col {
+  display: flex;
+  align-items: center;
+}
+
+.profile-action .uro-usr-act {
+  display: table-cell;
+  vertical-align: middle;
+  color: white;
+  font-size: 15pt;
+}
+
+.profile-action ion-row {
+  margin-top: 20px;
+}

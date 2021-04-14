@@ -1,47 +1,83 @@
-<ion-content>
-  <ion-list>
-    <ion-list-header>
-      <h1>Edit Proyek</h1>
-    </ion-list-header>
+<h1 class="ion-padding">Header</h1>
 
-    <ion-item>
-      <ion-label position="floating">Manager Proyek</ion-label>
-      <ion-input></ion-input>
-      <ion-button slot="end" color="secondary">ubah</ion-button>
-    </ion-item>
+<div style="background-color: white; z-index: 1000">
+  <div>
+    <ion-list>
+      <ion-item>
+        <ion-label position="floating">Manager Proyek</ion-label>
+        <ion-input></ion-input>
+        <ion-button slot="end" shape="round" color="secondary">ubah</ion-button>
+      </ion-item>
 
-    <ion-item>
-      <ion-label position="stacked">Nama Proyek</ion-label>
-      <ion-input placeholder="Nama Proyek"></ion-input>
-    </ion-item>
+      <ion-item>
+        <ion-label position="stacked">Nama Proyek</ion-label>
+        <ion-input placeholder="Nama Proyek"></ion-input>
+      </ion-item>
 
-    <ion-item>
-      <ion-label position="stacked">Nama Perusahaan</ion-label>
-      <ion-input placeholder="Nama Perusahaan"></ion-input>
-    </ion-item>
+      <ion-item>
+        <ion-label position="stacked">Nama Perusahaan</ion-label>
+        <ion-input placeholder="Nama Perusahaan"></ion-input>
+      </ion-item>
 
-    <ion-item>
-      <ion-label position="fixed">Nomor Urut</ion-label>
-      <ion-input placeholder="Nomor"></ion-input>
-    </ion-item>
-  </ion-list>
-</ion-content>
+      <ion-item>
+        <ion-label position="fixed">Nomor Urut</ion-label>
+        <ion-input placeholder="Nomor"></ion-input>
+      </ion-item>
 
-<ion-tabs>
-  <ion-tab-bar class="tab-bottom" slot="bottom">
-    <ion-tab-button disabled="true"> </ion-tab-button>
-    <ion-tab-button (click)="save()" color="danger">
-      <div class="circle-btn-done-modal">
-        <ion-icon name="checkmark-outline"></ion-icon>
-      </div>
-      <ion-label>Selesai</ion-label>
-    </ion-tab-button>
-    <ion-tab-button (click)="close()">
-      <div class="circle-btn-close-modal">
-        <ion-icon name="close-outline"></ion-icon>
-      </div>
-      <ion-label color="danger">Batal</ion-label>
-    </ion-tab-button>
-    <ion-tab-button disabled="true"> </ion-tab-button>
-  </ion-tab-bar>
-</ion-tabs>
+      <ion-item>
+        <ion-label>Ditugaskan ke:</ion-label>
+      </ion-item>
+    </ion-list>
+  </div>
+
+  <div>
+    <ion-chip>
+      <ion-avatar>
+        <img
+          src="https://gravatar.com/avatar/dba6bae8c566f9d4041fb9cd9ada7741?d=identicon&f=y"
+        />
+      </ion-avatar>
+      <ion-label>Chip Avatar</ion-label>
+    </ion-chip>
+    <ion-chip>
+      <ion-avatar>
+        <img
+          src="https://gravatar.com/avatar/dba6bae8c566f9d4041fb9cd9ada7741?d=identicon&f=y"
+        />
+      </ion-avatar>
+      <ion-label>Chip Avatar</ion-label>
+    </ion-chip>
+
+    <ion-chip>
+      <ion-avatar>
+        <img
+          src="https://gravatar.com/avatar/dba6bae8c566f9d4041fb9cd9ada7741?d=identicon&f=y"
+        />
+      </ion-avatar>
+      <ion-label>Chip Avatar</ion-label>
+    </ion-chip>
+    <ion-chip>
+      <ion-icon name="add-circle"></ion-icon>
+      <ion-label>Tambah Tim</ion-label>
+    </ion-chip>
+  </div>
+
+  <ion-tabs>
+    <ion-tab-bar class="tab-bottom" slot="bottom">
+      <ion-tab-button disabled="true"> </ion-tab-button>
+      <ion-tab-button color="danger">
+        <div class="circle-btn-done-modal">
+          <ion-icon name="checkmark-outline"></ion-icon>
+        </div>
+        <ion-label>Selesai</ion-label>
+      </ion-tab-button>
+      <ion-tab-button>
+        <div class="circle-btn-close-modal">
+          <ion-icon name="close-outline"></ion-icon>
+        </div>
+        <ion-label color="danger">Batal</ion-label>
+      </ion-tab-button>
+      <ion-tab-button disabled="true"> </ion-tab-button>
+    </ion-tab-bar>
+  </ion-tabs>
+</div>

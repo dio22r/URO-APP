@@ -80,3 +80,11 @@ ion-item.disabled .job {
 .text-center {
   text-align: center;
 }
+
+.ion-drawer {
+  --ion-background-color: white;
+}
+
+.ion-drawer.edit {
+  --ion-background-color: yellow;
+}

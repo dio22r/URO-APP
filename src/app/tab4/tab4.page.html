@@ -1,7 +1,60 @@
-<ion-header>
-  <ion-toolbar>
-    <ion-title>Notifikasi</ion-title>
-  </ion-toolbar>
-</ion-header>
+<ion-content [fullscreen]="true">
+  <div class="title-warper">
+    <div class="logo">
+      <ion-img src="assets\icon\drawable-hdpi\Logo Light Blue.png"></ion-img>
+    </div>
+    <h3 class="text"><strong>Notifikasi</strong> ku</h3>
+  </div>
 
-<ion-content> </ion-content>
+  <div class="text-center uro-sort">
+    <ion-item lines="none">
+      <ion-label>Sortir :</ion-label>
+      <ion-button size="small" shape="round">Semua Tanggal</ion-button>
+      <ion-button size="small" fill="outline" shape="round">
+        <ion-datetime placeholder="Pilih Tanggal"></ion-datetime>
+      </ion-button>
+    </ion-item>
+  </div>
+
+  <ion-list>
+    <ion-item>
+      <ion-label class="ion-text-wrap">
+        <ion-text>
+          <h1 class="day">Hari Ini</h1>
+        </ion-text>
+      </ion-label>
+    </ion-item>
+
+    <ion-item class="item-project">
+      <ion-avatar slot="start">
+        <img
+          src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAAAAACH5BAAAAAAALAAAAAABAAEAAAICTAEAOw=="
+        />
+      </ion-avatar>
+      <ion-label class="ion-text-wrap">
+        <ion-text>
+          <p>
+            <strong>dio</strong> menyelesaikan tugas pada
+            <strong>App Project</strong>
+          </p>
+        </ion-text>
+      </ion-label>
+    </ion-item>
+
+    <ion-item class="item-project">
+      <ion-avatar slot="start">
+        <img
+          src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAAAAACH5BAAAAAAALAAAAAABAAEAAAICTAEAOw=="
+        />
+      </ion-avatar>
+      <ion-label class="ion-text-wrap">
+        <ion-text>
+          <p>
+            <strong>dio</strong> menyelesaikan tugas pada
+            <strong>App Project</strong>
+          </p>
+        </ion-text>
+      </ion-label>
+    </ion-item>
+  </ion-list>
+</ion-content>

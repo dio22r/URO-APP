@@ -1,0 +1,57 @@
+.title-warper {
+  padding: 20px;
+}
+
+.title-warper .logo,
+.title-warper .text {
+  vertical-align: middle;
+}
+
+.title-warper .logo {
+  width: 35px;
+  display: inline-block;
+  margin: 0px 13px 0px 17px;
+}
+
+.title-warper .text {
+  color: #58f9da;
+  font-size: 24pt;
+  display: inline-block;
+  margin: 0px;
+  padding: 3px 12px;
+  border-left: 1px solid white;
+}
+
+.title-warper .text strong {
+  color: #30b299;
+}
+
+ion-item {
+  margin: 0px 20px;
+}
+
+ion-list ion-item .day {
+  color: #30b299;
+  border-bottom: 2px solid #52e5cf;
+  text-align: center;
+  font-style: italic;
+}
+
+.uro-sort ion-item ion-label {
+  color: white;
+}
+
+.item-project {
+  color: #ccc;
+}
+
+.item-project strong {
+  color: #30b299;
+  font-weight: bold;
+}
+
+ion-datetime {
+  --padding-top: 0px;
+  --padding-bottom: 0px;
+  --padding-start: 0px;
+}
