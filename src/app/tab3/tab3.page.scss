@@ -1,0 +1,125 @@
+.title-warper {
+  padding: 20px;
+}
+
+.title-warper .logo,
+.title-warper .text {
+  vertical-align: middle;
+}
+
+.title-warper .logo {
+  width: 35px;
+  display: inline-block;
+  margin: 0px 13px 0px 17px;
+}
+
+.title-warper .text {
+  color: #58f9da;
+  font-size: 24pt;
+  display: inline-block;
+  margin: 0px;
+  padding: 3px 12px;
+  border-left: 1px solid white;
+}
+
+.title-warper .text strong {
+  color: #30b299;
+}
+
+.circle-index {
+  background: #182240;
+  color: #52e5cf;
+  border-radius: 50%;
+  padding: 5px 10px;
+  text-align: center;
+  font-size: 28pt;
+  width: 53px;
+  height: 53px;
+  display: inline-block;
+  margin-right: 11px;
+}
+
+.uro-card-warper {
+  background: white;
+  margin: 25px;
+  padding: 10px;
+}
+
+.uro-card-warper ion-grid {
+  --ion-grid-padding: 0px;
+}
+
+.uro-card-warper ion-col {
+  padding: 0px;
+}
+
+.uro-tugas-detail-warper > * {
+  margin: 0px;
+  padding: 0px;
+}
+
+.uro-tugas-detail-warper h3 {
+  font-weight: bold;
+  color: #182240;
+  font-size: 28px;
+}
+
+.uro-tugas-detail-warper {
+  .uro-tugas-project {
+    font-weight: bold;
+    color: #52e5cf;
+    font-size: 16px;
+  }
+}
+
+.uro-tugas-italic-label {
+  font-style: italic;
+  font-size: 14px;
+  color: #52e5cf;
+}
+
+.uro-tugas-more-detail-warper {
+  .uro-tugas-label label {
+    font-size: 12px;
+  }
+
+  .uro-tugas-data {
+    margin-left: 5px;
+  }
+
+  ion-icon {
+    margin-bottom: -4px;
+    background: #58f9da;
+    border-radius: 50%;
+  }
+}
+
+.uro-people-involved {
+  position: relative;
+}
+
+.uro-people-involved > div {
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+  width: 40%;
+  height: 70px;
+}
+
+.uro-people-involved ion-avatar {
+  width: 20px;
+  height: 20px;
+  display: inline-grid;
+  margin-right: 3px;
+}
+.uro-people-involved label {
+  display: block;
+}
+
+.ion-drawer {
+  --ion-background-color: white;
+}
+
+.ion-drawer.edit {
+  --ion-background-color: yellow;
+}

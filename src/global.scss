@@ -82,3 +82,89 @@ ion-modal {
 .alert-button .alert-button-inner {
   color: #162241;
 }
+
+.input-label {
+  margin: 0px 0px 5px 15px;
+  color: #58f9da;
+}
+
+.wrap-input {
+  background-color: 182240;
+  border-radius: 25px;
+  margin-bottom: 26px;
+  border: 2px solid #58f9da;
+}
+
+.input {
+  display: block;
+  width: 100%;
+  background: transparent;
+  font-size: 16px;
+  line-height: 1.2;
+  border: none;
+  outline: none;
+  height: 46px;
+  padding: 0 20px 0 23px;
+  color: #eeeeee;
+}
+
+.container-form-btn {
+  display: flex;
+  justify-content: center;
+}
+
+.form-btn-full {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 160px;
+  height: 42px;
+  background-color: #58f9da;
+  border-radius: 20px;
+  font-size: 16px;
+  color: #182240;
+  text-transform: uppercase;
+  transition: all 0.4s;
+  padding: 0px 20px;
+}
+
+.form-btn-full.outline {
+  background-color: #182240;
+  color: #58f9da;
+  border: 2px solid #58f9da;
+}
+
+.form-btn-full.uro-sm {
+  font-size: 14px;
+  min-width: 140px;
+  height: 24px;
+  display: inline-block;
+}
+
+.form-btn-full.uro-xs {
+  font-size: 10px;
+  min-width: 100px;
+  height: 20px;
+  display: inline;
+}
+
+ion-content {
+  .uro-content-header {
+    margin-bottom: 30px;
+  }
+
+  .uro-content-header p {
+    color: #58f9da;
+    margin: 3px;
+  }
+
+  .uro-profile-avatar {
+    display: inline-block;
+    width: 120px;
+    height: 120px;
+  }
+}
+
+.uro-primary-color {
+  color: #58f9da;
+}

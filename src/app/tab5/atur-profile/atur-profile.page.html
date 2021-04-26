@@ -1,9 +1,198 @@
-<ion-header>
-  <ion-toolbar>
-    <ion-title>atur-profile</ion-title>
-  </ion-toolbar>
-</ion-header>
-
 <ion-content>
+  <app-uro-header-profile></app-uro-header-profile>
 
+  <div>
+    <div class="ion-text-center uro-content-header">
+      <ion-avatar class="uro-profile-avatar">
+        <img
+          src="https://gravatar.com/avatar/dba6bae8c566f9d4041fb9cd9ada7741?d=identicon&f=y"
+        />
+      </ion-avatar>
+      <p class="ion-text-center">
+        <button type="button" class="form-btn-full uro-sm">UBAH GAMBAR</button>
+      </p>
+    </div>
+    <div>
+      <form class="ion-padding">
+        <p class="input-label">Nama</p>
+        <div class="wrap-input">
+          <input
+            class="input"
+            type="text"
+            name="uro_username"
+            placeholder="Nama Lengkap"
+          />
+        </div>
+
+        <p class="input-label">No. Induk</p>
+        <div class="wrap-input">
+          <input
+            class="input"
+            type="email"
+            name="uro_email"
+            placeholder="Nomor Induk"
+          />
+        </div>
+
+        <p class="input-label">Telephone</p>
+        <div class="wrap-input">
+          <input
+            class="input"
+            type="email"
+            name="uro_email"
+            placeholder="+62 ..."
+          />
+        </div>
+
+        <p class="input-label">Alamat</p>
+        <div class="wrap-input">
+          <input
+            class="input"
+            type="email"
+            name="uro_email"
+            placeholder="Alamat"
+          />
+        </div>
+
+        <p class="input-label">Kota</p>
+        <div class="wrap-input">
+          <input
+            class="input"
+            type="email"
+            name="uro_email"
+            placeholder="Kota"
+          />
+        </div>
+
+        <p class="input-label">Provinsi</p>
+        <div class="wrap-input">
+          <input
+            class="input"
+            type="email"
+            name="uro_email"
+            placeholder="Provinsi"
+          />
+        </div>
+
+        <p class="input-label">Negara</p>
+        <div class="wrap-input">
+          <input
+            class="input"
+            type="email"
+            name="uro_email"
+            placeholder="Negara"
+          />
+        </div>
+
+        <p class="input-label">Tempat/Tgl. Lahir</p>
+        <ion-grid>
+          <ion-row>
+            <ion-col>
+              <div class="wrap-input">
+                <input
+                  class="input"
+                  type="email"
+                  name="uro_email"
+                  placeholder="Tempat"
+                />
+              </div>
+            </ion-col>
+            <ion-col>
+              <ion-datetime
+                class="form-btn-full outline datetime-warper"
+                placeholder="Pilih Tanggal"
+              ></ion-datetime>
+            </ion-col>
+          </ion-row>
+        </ion-grid>
+
+        <p class="input-label">Jabatan</p>
+        <div class="wrap-input">
+          <input
+            class="input"
+            type="email"
+            name="uro_email"
+            placeholder="Jabatan"
+          />
+        </div>
+
+        <p class="input-label">Alamat (KTP)</p>
+        <div class="wrap-input">
+          <input
+            class="input"
+            type="email"
+            name="uro_email"
+            placeholder="Alamat Sesuai KTP"
+          />
+        </div>
+
+        <p class="input-label">Kota (KTP)</p>
+        <div class="wrap-input">
+          <input
+            class="input"
+            type="email"
+            name="uro_email"
+            placeholder="Kota Sesuai KTP"
+          />
+        </div>
+
+        <p class="input-label">Provinsi (KTP)</p>
+        <div class="wrap-input">
+          <input
+            class="input"
+            type="email"
+            name="uro_email"
+            placeholder="Provinsi sesuai KTP"
+          />
+        </div>
+
+        <p class="input-label">Negara (KTP)</p>
+        <div class="wrap-input">
+          <input
+            class="input"
+            type="email"
+            name="uro_email"
+            placeholder="Negara sesuai KTP"
+          />
+        </div>
+
+        <p class="input-label">Jenis Kelamin</p>
+
+        <ion-radio-group value="">
+          <ion-grid>
+            <ion-row>
+              <ion-col>
+                <ion-item>
+                  <ion-label class="uro-primary-color">
+                    <ion-text class="uro-primary-color">Pria</ion-text>
+                  </ion-label>
+                  <ion-radio slot="start" value="pria"></ion-radio>
+                </ion-item>
+              </ion-col>
+              <ion-col>
+                <ion-item>
+                  <ion-label>
+                    <ion-text class="uro-primary-color">Wanita</ion-text>
+                  </ion-label>
+                  <ion-radio slot="start" value="wanita"></ion-radio>
+                </ion-item>
+              </ion-col>
+            </ion-row>
+          </ion-grid>
+        </ion-radio-group>
+
+        <div class="container-form-btn">
+          <button
+            routerLink="/tabs/tab5/"
+            type="button"
+            class="form-btn-full outline ion-margin-end"
+          >
+            Batal
+          </button>
+
+          <button type="button" class="form-btn-full">UBAH</button>
+        </div>
+      </form>
+    </div>
+  </div>
 </ion-content>

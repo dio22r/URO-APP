@@ -93,13 +93,13 @@
   </div>
 
   <div class="text-center">
-    <ion-button
-      size="small"
-      [attr.fill]="showFinished ? 'solid' : 'outline'"
-      shape="round"
+    <button
+      class="form-btn-full uro-xs ion-margin-top"
+      [ngClass]="showFinished ? 'solid' : 'outline'"
       (click)="toggle_show_finished()"
-      >Tampilkan Terselesaikan</ion-button
     >
+      Tampilkan Terselesaikan
+    </button>
   </div>
 
   <ion-item
@@ -120,12 +120,8 @@
     </ion-label>
 
     <div class="button-warper" *ngIf="activeid == data.id">
-      <ion-button
-        color="uro-primary"
-        size="small"
-        shape="round"
-        (click)="edit_project(data.id)"
-        >Edit</ion-button
+      <button class="form-btn-full uro-xs" (click)="edit_project(data.id)">
+        Edit</button
       ><br />
       <ion-button
         size="small"

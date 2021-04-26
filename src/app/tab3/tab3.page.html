@@ -1,13 +1,309 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title> Tugas </ion-title>
+<ion-header [translucent]="true" class="uro-header ion-no-border">
+  <ion-toolbar class="">
+    <div class="title-warper">
+      <div class="logo">
+        <ion-img src="assets\icon\drawable-hdpi\Logo Light Blue.png"></ion-img>
+      </div>
+      <h3 class="text"><strong>Tugas</strong>ku</h3>
+    </div>
   </ion-toolbar>
 </ion-header>
 
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Tab 3</ion-title>
-    </ion-toolbar>
-  </ion-header>
+  <div class="uro-card-warper" (click)="edit_project(1)">
+    <ion-grid>
+      <ion-row>
+        <ion-col size="2" class="ion-text-right"
+          ><div class="circle-index">1</div></ion-col
+        >
+        <ion-col size="10">
+          <div class="uro-tugas-detail-warper">
+            <h3 class="uro-tugas-title">Rough Design</h3>
+            <p class="uro-tugas-project">App Project</p>
+            <p class="uro-tugas-italic-label">Dniz Soft</p>
+          </div>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+    <ion-grid class="uro-tugas-more-detail-warper">
+      <ion-row>
+        <ion-col size="2" class="ion-text-right">
+          <div class="uro-tugas-label">
+            <label>Selesai</label>
+            <ion-icon name="time-outline"></ion-icon>
+          </div>
+        </ion-col>
+        <ion-col size="10">
+          <div class="uro-tugas-data">7 Desember 2020</div>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col size="2" class="ion-text-right">
+          <div class="uro-tugas-label">
+            <label> Kolom </label>
+            <ion-icon name="alert-circle-outline"></ion-icon>
+          </div>
+        </ion-col>
+        <ion-col size="10">
+          <div class="uro-tugas-data">In Progress</div>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+
+    <div class="uro-people-involved">
+      <div>
+        <label class="uro-tugas-italic-label">Manager Proyek</label>
+        <ion-avatar>
+          <img
+            src="https://gravatar.com/avatar/dba6bae8c566f9d4041fb9cd9ada7741?d=identicon&f=y"
+          />
+        </ion-avatar>
+        <br />
+        <label class="uro-tugas-italic-label">Ditugaskan ke</label>
+
+        <ion-avatar>
+          <img
+            src="https://gravatar.com/avatar/dba6bae8c566f9d4041fb9cd9ada7741?d=identicon&f=y"
+          />
+        </ion-avatar>
+
+        <ion-avatar>
+          <img
+            src="https://gravatar.com/avatar/dba6bae8c566f9d4041fb9cd9ada7741?d=identicon&f=y"
+          />
+        </ion-avatar>
+
+        <ion-avatar>
+          <img
+            src="https://gravatar.com/avatar/dba6bae8c566f9d4041fb9cd9ada7741?d=identicon&f=y"
+          />
+        </ion-avatar>
+      </div>
+    </div>
+  </div>
+
+  <div class="uro-card-warper">
+    <ion-grid>
+      <ion-row>
+        <ion-col size="2" class="ion-text-right"
+          ><div class="circle-index">2</div></ion-col
+        >
+        <ion-col size="10">
+          <div class="uro-tugas-detail-warper">
+            <h3 class="uro-tugas-title">Rough Design</h3>
+            <p class="uro-tugas-project">App Project</p>
+            <p class="uro-tugas-italic-label">Dniz Soft</p>
+          </div>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+    <ion-grid class="uro-tugas-more-detail-warper">
+      <ion-row>
+        <ion-col size="2" class="ion-text-right">
+          <div class="uro-tugas-label">
+            <label>Selesai</label>
+            <ion-icon name="time-outline"></ion-icon>
+          </div>
+        </ion-col>
+        <ion-col size="10">
+          <div class="uro-tugas-data">7 Desember 2020</div>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col size="2" class="ion-text-right">
+          <div class="uro-tugas-label">
+            <label> Kolom </label>
+            <ion-icon name="alert-circle-outline"></ion-icon>
+          </div>
+        </ion-col>
+        <ion-col size="10">
+          <div class="uro-tugas-data">In Progress</div>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+
+    <div class="uro-people-involved">
+      <div>
+        <label class="uro-tugas-italic-label">Manager Proyek</label>
+        <ion-avatar>
+          <img
+            src="https://gravatar.com/avatar/dba6bae8c566f9d4041fb9cd9ada7741?d=identicon&f=y"
+          />
+        </ion-avatar>
+        <br />
+        <label class="uro-tugas-italic-label">Ditugaskan ke</label>
+
+        <ion-avatar>
+          <img
+            src="https://gravatar.com/avatar/dba6bae8c566f9d4041fb9cd9ada7741?d=identicon&f=y"
+          />
+        </ion-avatar>
+
+        <ion-avatar>
+          <img
+            src="https://gravatar.com/avatar/dba6bae8c566f9d4041fb9cd9ada7741?d=identicon&f=y"
+          />
+        </ion-avatar>
+
+        <ion-avatar>
+          <img
+            src="https://gravatar.com/avatar/dba6bae8c566f9d4041fb9cd9ada7741?d=identicon&f=y"
+          />
+        </ion-avatar>
+      </div>
+    </div>
+  </div>
+
+  <div class="uro-card-warper">
+    <ion-grid>
+      <ion-row>
+        <ion-col size="2" class="ion-text-right"
+          ><div class="circle-index">3</div></ion-col
+        >
+        <ion-col size="10">
+          <div class="uro-tugas-detail-warper">
+            <h3 class="uro-tugas-title">Rough Design</h3>
+            <p class="uro-tugas-project">App Project</p>
+            <p class="uro-tugas-italic-label">Dniz Soft</p>
+          </div>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+    <ion-grid class="uro-tugas-more-detail-warper">
+      <ion-row>
+        <ion-col size="2" class="ion-text-right">
+          <div class="uro-tugas-label">
+            <label>Selesai</label>
+            <ion-icon name="time-outline"></ion-icon>
+          </div>
+        </ion-col>
+        <ion-col size="10">
+          <div class="uro-tugas-data">7 Desember 2020</div>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col size="2" class="ion-text-right">
+          <div class="uro-tugas-label">
+            <label> Kolom </label>
+            <ion-icon name="alert-circle-outline"></ion-icon>
+          </div>
+        </ion-col>
+        <ion-col size="10">
+          <div class="uro-tugas-data">In Progress</div>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+
+    <div class="uro-people-involved">
+      <div>
+        <label class="uro-tugas-italic-label">Manager Proyek</label>
+        <ion-avatar>
+          <img
+            src="https://gravatar.com/avatar/dba6bae8c566f9d4041fb9cd9ada7741?d=identicon&f=y"
+          />
+        </ion-avatar>
+        <br />
+        <label class="uro-tugas-italic-label">Ditugaskan ke</label>
+
+        <ion-avatar>
+          <img
+            src="https://gravatar.com/avatar/dba6bae8c566f9d4041fb9cd9ada7741?d=identicon&f=y"
+          />
+        </ion-avatar>
+
+        <ion-avatar>
+          <img
+            src="https://gravatar.com/avatar/dba6bae8c566f9d4041fb9cd9ada7741?d=identicon&f=y"
+          />
+        </ion-avatar>
+
+        <ion-avatar>
+          <img
+            src="https://gravatar.com/avatar/dba6bae8c566f9d4041fb9cd9ada7741?d=identicon&f=y"
+          />
+        </ion-avatar>
+      </div>
+    </div>
+  </div>
+
+  <div class="ion-drawer">
+    <div>
+      <ion-list>
+        <h3 class="ion-text-center">Atur Proyek</h3>
+        <ion-item>
+          <ion-label position="floating">Manager Proyek</ion-label>
+          <ion-input></ion-input>
+          <ion-button slot="end" shape="round" color="secondary"
+            >ubah</ion-button
+          >
+        </ion-item>
+
+        <ion-item>
+          <ion-label position="stacked">Nama Proyek</ion-label>
+          <ion-input placeholder="Nama Proyek"></ion-input>
+        </ion-item>
+
+        <ion-item>
+          <ion-label position="stacked">Nama Perusahaan</ion-label>
+          <ion-input placeholder="Nama Perusahaan"></ion-input>
+        </ion-item>
+
+        <ion-item>
+          <ion-label position="fixed">Nomor Urut</ion-label>
+          <ion-input placeholder="Nomor"></ion-input>
+        </ion-item>
+      </ion-list>
+    </div>
+
+    <div>
+      <ion-chip>
+        <ion-avatar>
+          <img
+            src="https://gravatar.com/avatar/dba6bae8c566f9d4041fb9cd9ada7741?d=identicon&f=y"
+          />
+        </ion-avatar>
+        <ion-label>Chip Avatar</ion-label>
+      </ion-chip>
+      <ion-chip>
+        <ion-avatar>
+          <img
+            src="https://gravatar.com/avatar/dba6bae8c566f9d4041fb9cd9ada7741?d=identicon&f=y"
+          />
+        </ion-avatar>
+        <ion-label>Chip Avatar</ion-label>
+      </ion-chip>
+
+      <ion-chip>
+        <ion-avatar>
+          <img
+            src="https://gravatar.com/avatar/dba6bae8c566f9d4041fb9cd9ada7741?d=identicon&f=y"
+          />
+        </ion-avatar>
+        <ion-label>Chip Avatar</ion-label>
+      </ion-chip>
+      <ion-chip>
+        <ion-icon name="add-circle"></ion-icon>
+        <ion-label>Tambah Tim</ion-label>
+      </ion-chip>
+    </div>
+
+    <div>
+      <ion-tab-bar class="tab-bottom" slot="bottom">
+        <ion-tab-button disabled="true"> </ion-tab-button>
+        <ion-tab-button color="danger">
+          <div class="circle-btn-done-modal">
+            <ion-icon name="checkmark-outline"></ion-icon>
+          </div>
+          <ion-label>Selesai</ion-label>
+        </ion-tab-button>
+        <ion-tab-button (click)="hide_drawer()">
+          <div class="circle-btn-close-modal">
+            <ion-icon name="close-outline"></ion-icon>
+          </div>
+          <ion-label color="danger">Batal</ion-label>
+        </ion-tab-button>
+        <ion-tab-button disabled="true"> </ion-tab-button>
+      </ion-tab-bar>
+    </div>
+  </div>
 </ion-content>
