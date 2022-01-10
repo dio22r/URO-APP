@@ -1,0 +1,58 @@
+<ion-content class="">
+  <ion-grid class="flex-bg ion-justify-content-center">
+    <ion-row>
+      <ion-col>
+        <div class="bg-color">
+          <ion-img
+            src="assets\icon\drawable-hdpi\Logo Light Blue.png"
+          ></ion-img>
+          <div>
+            <form class="ion-padding">
+              <p class="input-label">Nama Pengguna</p>
+              <div class="wrap-input">
+                <input
+                  class="input"
+                  type="text"
+                  name="email"
+                  placeholder="Email"
+                  [(ngModel)]="email"
+                />
+              </div>
+
+              <p class="input-label">Kata Sandi</p>
+              <div class="wrap-input">
+                <input
+                  class="input"
+                  type="password"
+                  name="password"
+                  placeholder="Kata Sandi"
+                  [(ngModel)]="password"
+                />
+              </div>
+
+              <p class="ion-text-center lupa-sandi">Lupa Kata Sandi?</p>
+              <div class="container-form-btn">
+                <button
+                  type="button"
+                  (click)="submitLogin()"
+                  class="form-btn-full"
+                >
+                  MASUK
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+        <div class="container-form-btn">
+          <button
+            type="button"
+            routerLink="/daftar"
+            class="form-btn-full outline"
+          >
+            Daftar
+          </button>
+        </div>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>

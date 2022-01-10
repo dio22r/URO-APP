@@ -123,3 +123,58 @@
 .ion-drawer.edit {
   --ion-background-color: yellow;
 }
+
+.alert-wrapper {
+  background: #645555;
+}
+
+.todo-warper {
+  .uro-check-icon ion-icon {
+    font-size: 30px;
+    border-radius: 50%;
+    color: black;
+  }
+
+  .uro-check-icon.complete ion-icon {
+    background: #52e5cf;
+  }
+
+  .uro-del-icon ion-icon {
+    font-size: 30px;
+    border-radius: 50%;
+    background: #182240;
+    color: #52e5cf;
+  }
+
+  .uro-del-icon {
+    background: transparent;
+    padding: 0px;
+  }
+
+  label {
+    display: block;
+    border: 1px solid black;
+    padding: 5px 10px;
+    margin: 0px 5px;
+    border-radius: 20px;
+  }
+
+  label.complete {
+    background: #52e5cf;
+    text-decoration: line-through;
+  }
+}
+
+.uro-drawer-warper {
+  margin: 0px 15px;
+}
+
+ion-modal-view {
+  width: 90% !important;
+  margin: 30px;
+  border-radius: 20px;
+}
+
+.modal {
+  min-height: 80%;
+}

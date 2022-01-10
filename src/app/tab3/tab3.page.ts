@@ -1,4 +1,5 @@
 import { Component } from "@angular/core";
+import { AlertController } from "@ionic/angular";
 import { CupertinoPane, CupertinoSettings } from "cupertino-pane";
 
 @Component({
@@ -8,7 +9,7 @@ import { CupertinoPane, CupertinoSettings } from "cupertino-pane";
 })
 export class Tab3Page {
   myPane: CupertinoPane;
-  constructor() {}
+  constructor(public alertController: AlertController) {}
 
   ngOnInit() {
     let settings: CupertinoSettings = {
@@ -24,7 +25,27 @@ export class Tab3Page {
       onDrag: () => console.log("Drag event"),
       onBackdropTap: () => this.hide_drawer(),
     };
-    this.myPane = new CupertinoPane(".ion-drawer", settings);
+    this.myPane = new CupertinoPane("#tab-tugas-drawer", settings);
+
+    this.myPane.present({ animate: true });
+  }
+
+  async presentAlert() {
+    const alert = await this.alertController.create({
+      cssClass: "my-custom-class",
+      header: "Alert",
+      subHeader: "Subtitle",
+      message: "This is an alert message.",
+      buttons: ["OK"],
+    });
+
+    this.myPane.hide();
+
+    await alert.present();
+
+    const { role } = await alert.onDidDismiss();
+    console.log("onDidDismiss resolved with role", role);
+    this.myPane.present();
   }
 
   async edit_project(id: number) {

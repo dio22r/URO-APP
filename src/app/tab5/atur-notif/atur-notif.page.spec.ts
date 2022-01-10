@@ -1,16 +1,16 @@
-import { async, ComponentFixture, TestBed } from '@angular/core/testing';
-import { IonicModule } from '@ionic/angular';
+import { async, ComponentFixture, TestBed } from "@angular/core/testing";
+import { IonicModule } from "@ionic/angular";
 
-import { AturNotifPage } from './atur-notif.page';
+import { AturNotifPage } from "./atur-notif.page";
 
-describe('AturNotifPage', () => {
+describe("AturNotifPage", () => {
   let component: AturNotifPage;
   let fixture: ComponentFixture<AturNotifPage>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ AturNotifPage ],
-      imports: [IonicModule.forRoot()]
+      declarations: [AturNotifPage],
+      imports: [IonicModule.forRoot()],
     }).compileComponents();
 
     fixture = TestBed.createComponent(AturNotifPage);
@@ -18,7 +18,7 @@ describe('AturNotifPage', () => {
     fixture.detectChanges();
   }));
 
-  it('should create', () => {
+  it("should create", () => {
     expect(component).toBeTruthy();
   });
 });

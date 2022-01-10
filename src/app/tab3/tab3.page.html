@@ -226,36 +226,96 @@
     </div>
   </div>
 
-  <div class="ion-drawer">
+  <div id="tab-tugas-drawer" class="tab-tugas ion-drawer">
     <div>
-      <ion-list>
-        <h3 class="ion-text-center">Atur Proyek</h3>
-        <ion-item>
-          <ion-label position="floating">Manager Proyek</ion-label>
-          <ion-input></ion-input>
-          <ion-button slot="end" shape="round" color="secondary"
-            >ubah</ion-button
+      <h3 class="ion-text-center">Atur Proyek</h3>
+      <ion-grid>
+        <ion-row>
+          <ion-col size="3" class="ion-text-right"
+            ><div class="circle-index">3</div></ion-col
           >
-        </ion-item>
+          <ion-col size="9">
+            <div class="uro-tugas-detail-warper">
+              <h3 class="uro-tugas-title">Rough Design</h3>
+              <p class="uro-tugas-project">App Project</p>
+              <p class="uro-tugas-italic-label">Dniz Soft</p>
+            </div>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
 
-        <ion-item>
-          <ion-label position="stacked">Nama Proyek</ion-label>
-          <ion-input placeholder="Nama Proyek"></ion-input>
-        </ion-item>
+      <ion-grid class="uro-tugas-more-detail-warper">
+        <ion-row>
+          <ion-col size="3" class="ion-text-right">
+            <div class="uro-tugas-label">
+              <label>Selesai</label>
+              <ion-icon name="time-outline"></ion-icon>
+            </div>
+          </ion-col>
+          <ion-col size="9">
+            <div class="uro-tugas-data">7 Desember 2020</div>
+          </ion-col>
+        </ion-row>
+        <ion-row>
+          <ion-col size="3" class="ion-text-right">
+            <div class="uro-tugas-label">
+              <label> Kolom </label>
+              <ion-icon name="alert-circle-outline"></ion-icon>
+            </div>
+          </ion-col>
+          <ion-col size="9">
+            <select placeholder="Select One">
+              <option value="1">In Progress</option>
+              <option value="2">To Do</option>
+              <option value="3">Prototye</option>
+              <option value="4">Running Test</option>
+            </select>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
 
-        <ion-item>
-          <ion-label position="stacked">Nama Perusahaan</ion-label>
-          <ion-input placeholder="Nama Perusahaan"></ion-input>
-        </ion-item>
+      <hr />
 
-        <ion-item>
-          <ion-label position="fixed">Nomor Urut</ion-label>
-          <ion-input placeholder="Nomor"></ion-input>
-        </ion-item>
-      </ion-list>
+      <div class="todo-warper">
+        <ion-grid>
+          <ion-row>
+            <ion-col size="1">
+              <span class="uro-check-icon complete"
+                ><ion-icon name="checkmark-circle-outline"></ion-icon
+              ></span>
+            </ion-col>
+            <ion-col size="9">
+              <label class="complete">Pencil Drawing</label>
+            </ion-col>
+            <ion-col size="2">
+              <button (click)="presentAlert()" class="uro-del-icon">
+                <ion-icon name="close-circle-outline"></ion-icon>
+              </button>
+            </ion-col>
+          </ion-row>
+          <ion-row>
+            <ion-col size="1">
+              <span class="uro-check-icon"
+                ><ion-icon name="checkmark-circle-outline"></ion-icon
+              ></span>
+            </ion-col>
+            <ion-col size="9">
+              <label>Pencil Drawing</label>
+            </ion-col>
+            <ion-col size="2">
+              <button (click)="presentAlert()" class="uro-del-icon">
+                <ion-icon name="close-circle-outline"></ion-icon>
+              </button>
+            </ion-col>
+          </ion-row>
+        </ion-grid>
+      </div>
     </div>
 
-    <div>
+    <div class="uro-drawer-warper">
+      <hr />
+
+      <p class="uro-tugas-italic-label">Ditugaskan ke:</p>
       <ion-chip>
         <ion-avatar>
           <img
@@ -285,6 +345,10 @@
         <ion-icon name="add-circle"></ion-icon>
         <ion-label>Tambah Tim</ion-label>
       </ion-chip>
+
+      <hr />
+
+      <p class="uro-tugas-italic-label">Dniz Soft</p>
     </div>
 
     <div>

@@ -1,0 +1,26 @@
+ion-content {
+  --background: #58f9da;
+}
+
+.flex-bg {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+}
+
+ion-row {
+  width: 85%;
+}
+
+.bg-color {
+  background: #182240;
+  border-radius: 50px;
+  margin-bottom: 10px;
+}
+
+.title > h1 {
+  font-size: 42px;
+  font-weight: bold;
+  color: #182240;
+}
